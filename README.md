@@ -6,23 +6,32 @@ Hijack Putty sessions in order to sniff conversation and inject Linux commands.
 
 Help:
 =====
-	Operation modes:
-		-w			Inject in all existing Putty sessions and wait in background for new sessions (and inject in those also)
-		-p PID		Inject only in existing Putty session identified by pid then exit PuttyRider immediately
-		-d			Debug mode. Do not exit or background. Display in console the messages received from the injected DLL
-		-c CMD		Automatically execute a Linux command after successful injection
-		-s ?		Get the list of all saved sessions and their information
-		-x			Cleanup. Remove the DLL from all running Putty instances
-		
-	Output modes:
-		-f 			Write all conversation to a file in the local directory. The filename will have the pid of current putty.exe appended
-		-c IP:PORT	Connect back to the specified machine and start an interactive session.
+  Operation modes:
+    -l      List the running Putty processes and their connections
+    -w      Inject in all existing Putty sessions and wait for new sessions
+            to inject in those also
+    -p PID  Inject only in existing Putty session identified by PID.
+            If PID==0, inject in the first Putty found
+    -x      Cleanup. Remove the DLL from all running Putty instances
+    -d      Debug mode. Only works with -p mode
+    -c CMD  Automatically execute a Linux command after successful injection
+            PuttyRider will remove trailing spaces and '&' character from CMD
+            PuttyRider will add \" 1>/dev/null 2>/dev/null &\" to CMD
+    -h      Print this help
 
-	Client interactive commands (e.g. in a netcat listener):
-		Linux cmd
-		!disco
-		!recon
-		!exit
-		!exitall
+  Output modes:
+    -f          Write all Putty conversation to a file in the local directory.
+                The filename will have the PID of current putty.exe appended
+    -r IP:PORT  Initiate a reverse connection to the specified machine and
+                start an interactive session.
+
+  Interactive commands (after you receive a reverse connection):
+    !status     See if the Putty window is connected to user input
+    !discon     Disconnect the main Putty window so it won't display anything
+                This is useful to send commands without the user to notice
+    !recon      Reconnect the Putty window to its normal operation mode
+    CMD         Linux shell commands
+    !exit       Terminate this connection
+    !help       Display help for client connection
 
 
