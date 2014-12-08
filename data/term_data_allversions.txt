@@ -1,0 +1,135 @@
+
+0.52
+	- no term_data()
+
+	
+0.53
+	- no term_data()
+	
+	
+0.54
+	int term_data(Terminal *term, int is_stderr, const char *data, int len)
+	{
+		bufchain_add(&term->inbuf, data, len);
+		if (!term->in_term_out) {
+			term->in_term_out = TRUE;
+			term_blink(term, 1);
+			term_out(term);
+			term->in_term_out = FALSE;
+		}
+
+0.55
+	int term_data(Terminal *term, int is_stderr, const char *data, int len)
+	{
+		bufchain_add(&term->inbuf, data, len);
+		if (!term->in_term_out) {
+			term->in_term_out = TRUE;
+			term_blink(term, 1);
+			term_out(term);
+			term->in_term_out = FALSE;
+		}
+
+0.56
+	int term_data(Terminal *term, int is_stderr, const char *data, int len)
+	{
+		bufchain_add(&term->inbuf, data, len);
+		if (!term->in_term_out) {
+			term->in_term_out = TRUE;
+			term_blink(term, 1);
+			term_out(term);
+			term->in_term_out = FALSE;
+		}
+
+
+0.57
+	int term_data(Terminal *term, int is_stderr, const char *data, int len)
+	{
+		bufchain_add(&term->inbuf, data, len);
+		if (!term->in_term_out) {
+			term->in_term_out = TRUE;
+			term_blink(term, 1);
+			term_out(term);
+			term->in_term_out = FALSE;
+		}
+
+
+0.58
+	int term_data(Terminal *term, int is_stderr, const char *data, int len)
+	{
+		bufchain_add(&term->inbuf, data, len);
+		if (!term->in_term_out) {
+			term->in_term_out = TRUE;
+			term_reset_cblink(term);
+			if (term->selstate != DRAGGING)
+				term_out(term);
+			term->in_term_out = FALSE;
+		}
+
+
+0.59
+	int term_data(Terminal *term, int is_stderr, const char *data, int len)
+	{
+		bufchain_add(&term->inbuf, data, len);
+		if (!term->in_term_out) {
+			term->in_term_out = TRUE;
+			term_reset_cblink(term);
+			if (term->selstate != DRAGGING)
+				term_out(term);
+			term->in_term_out = FALSE;
+		}
+
+
+0.60
+	int term_data(Terminal *term, int is_stderr, const char *data, int len)
+	{
+		bufchain_add(&term->inbuf, data, len);
+
+		if (!term->in_term_out) {
+			term->in_term_out = TRUE;
+			term_reset_cblink(term);
+			if (term->selstate != DRAGGING)
+				term_out(term);
+			term->in_term_out = FALSE;
+		}
+
+
+0.61
+	int term_data(Terminal *term, int is_stderr, const char *data, int len)
+	{
+		bufchain_add(&term->inbuf, data, len);
+		if (!term->in_term_out) {
+			term->in_term_out = TRUE;
+			term_reset_cblink(term);
+			if (term->selstate != DRAGGING)
+				term_out(term);
+			term->in_term_out = FALSE;
+		}
+
+
+0.62
+	int term_data(Terminal *term, int is_stderr, const char *data, int len)
+	{
+		bufchain_add(&term->inbuf, data, len);
+		if (!term->in_term_out) {
+			term->in_term_out = TRUE;
+			term_reset_cblink(term);
+			if (term->selstate != DRAGGING)
+				term_out(term);
+			term->in_term_out = FALSE;
+		}
+
+
+0.63
+int term_data(Terminal *term, int is_stderr, const char *data, int len)
+{
+    bufchain_add(&term->inbuf, data, len);
+    if (!term->in_term_out) {
+		term->in_term_out = TRUE;
+		term_reset_cblink(term);
+		if (term->selstate != DRAGGING)
+			term_out(term);
+		term->in_term_out = FALSE;
+    }
+
+
+

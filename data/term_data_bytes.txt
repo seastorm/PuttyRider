@@ -1,0 +1,55 @@
+term_data() - Putty 0.60
+
+00435458  /$ 56             PUSH ESI
+00435459  |. FF7424 14      PUSH DWORD PTR SS:[ESP+14]               ; /Arg3
+0043545D  |. 8B7424 0C      MOV ESI,DWORD PTR SS:[ESP+C]             ; |
+00435461  |. FF7424 14      PUSH DWORD PTR SS:[ESP+14]               ; |Arg2
+00435465  |. 8D46 60        LEA EAX,DWORD PTR DS:[ESI+60]            ; |
+00435468  |. 50             PUSH EAX                                 ; |Arg1
+00435469  |. E8 4055FDFF    CALL putty-0_.0040A9AE                   ; \putty-0_.0040A9AE
+
+
+0.52
+	- no term_data()
+	
+0.53
+	- no term_data()
+
+0.54
+	56 8b 74 24 08 ff 74 24 14 8d 46 4c ff 74 24 14 50 e8
+
+0.55
+	56 8b 74 24 08 ff 74 24 14 8d 46 4c ff 74 24 14 50 e8
+
+0.56
+	0042B80F  /$ 56             PUSH ESI
+	0042B810  |. 8B7424 08      MOV ESI,DWORD PTR SS:[ESP+8]
+	0042B814  |. FF7424 14      PUSH DWORD PTR SS:[ESP+14]               ; /Arg3
+	0042B818  |. 8D46 4C        LEA EAX,DWORD PTR DS:[ESI+4C]            ; |
+	0042B81B  |. FF7424 14      PUSH DWORD PTR SS:[ESP+14]               ; |Arg2
+	0042B81F  |. 50             PUSH EAX                                 ; |Arg1
+	0042B820  |. E8 64B9FDFF    CALL putty-0_.00407189                   ; \putty-0_.00407189
+
+	56 8b 74 24 08 ff 74 24 14 8d 46 4c ff 74 24 14 50 e8 		=====
+	
+0.57
+	56 ff 74 24 14 8b 74 24 0c ff 74 24 14 8d 46 4c 50 e8		=====
+
+0.58
+	56 ff 74 24 14 8b 74 24 0c ff 74 24 14 8d 46 60 50 e8		=====
+
+0.59
+	56 ff 74 24 14 8b 74 24 0c ff 74 24 14 8d 46 60 50 e8
+
+0.60
+	56 ff 74 24 14 8b 74 24 0c ff 74 24 14 8d 46 60 50 e8
+
+0.61
+	56 ff 74 24 14 8b 74 24 0c ff 74 24 14 8d 46 60 50 e8
+
+0.62
+	56 ff 74 24 14 8b 74 24 0c ff 74 24 14 8d 46 60 50 e8
+
+0.63
+	56 ff 74 24 14 8b 74 24 0c ff 74 24 14 8d 46 60 50 e8
+
