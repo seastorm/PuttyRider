@@ -18,8 +18,7 @@ Help:
 		-f 			Write all conversation to a file in the local directory. The filename will have the pid of current putty.exe appended
 		-c IP:PORT	Connect back to the specified machine and start an interactive session.
 
-
-Client interactive commands (this can be netcat or PuttyRiderClient)
+	Client interactive commands (e.g. in a netcat listener):
 		Linux cmd
 		!disco
 		!recon
