@@ -1,15 +1,12 @@
 PuttyRider
 ==========
-
 Hijack Putty sessions in order to sniff conversation and inject Linux commands.
 
 
 Documentation:
 ==============
-* Defcamp 2014 presentation - pdf [1]
-* Defcamp 2014 presentation - video [2]
-[1]: http://defcamp.ro/dc14/AdrianFurtuna.pdf
-[2]: https://www.youtube.com/watch?v=nfhzoFPGUhg&list=UUc05xgnkf4YZEdn3zBJRFkA
+* [Defcamp 2014 presentation - pdf](http://defcamp.ro/dc14/AdrianFurtuna.pdf)
+* [Defcamp 2014 presentation - video](https://www.youtube.com/watch?v=nfhzoFPGUhg&list=UUc05xgnkf4YZEdn3zBJRFkA)
 
 
 Usage:
