@@ -2,15 +2,19 @@ PuttyRider
 ==========
 Hijack Putty sessions in order to sniff conversation and inject Linux commands.
 
+Download
+========
+[PuttyRider-bin.zip](https://github.com/seastorm/PuttyRider/releases/download/0.1/PuttyRider-bin.zip)
 
-Documentation:
-==============
+
+Documentation
+=============
 * [Defcamp 2014 presentation - pdf](http://defcamp.ro/dc14/AdrianFurtuna.pdf)
 * [Defcamp 2014 presentation - video](https://www.youtube.com/watch?v=nfhzoFPGUhg&list=UUc05xgnkf4YZEdn3zBJRFkA)
 
 
-Usage:
-======
+Usage
+=====
 	Operation modes:
 		-l		List the running Putty processes and their connections
 		-w		Inject in all existing Putty sessions and wait for new sessions
@@ -40,8 +44,8 @@ Usage:
 		!help		Display help for client connection
 
 		
-Compiling:
-==========
+Compiling
+=========
 Use Visual Studio Command Prompt:
 
 	nmake main dll
