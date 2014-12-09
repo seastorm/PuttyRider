@@ -50,5 +50,8 @@ Use Visual Studio Command Prompt:
 
 	nmake main dll
 
+Acknowledgements
+================
+Thanks to Brett Moore of Insomnia Security for his proof of concept [PuttyHijack](https://www.insomniasec.com/downloads/tools/PuttyHijackV1.0.rar)
 
 
